@@ -13,7 +13,7 @@ const App: React.FC = () => {
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-dark d-flex justify-content-center">
         <a href="/" className="navbar-brand">
-          Frontend Developer
+          KS Aps Assignement
         </a>
       </nav>
 

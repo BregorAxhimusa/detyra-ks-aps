@@ -7,6 +7,10 @@ import IUserPostData from "../types/IUserPostData";
 import PostApiService from "../utils/PostApiService";
 import UserApiService from "../utils/UserApiService";
 
+/*
+ * A component that displays the user's first name and last name, 
+ * as well as each post that matches the user id ( like the user profile page ).
+ */
 const UserView: FC = () => {
 
     const location = useLocation();

@@ -4,6 +4,9 @@ import UserApiService from "../utils/UserApiService";
 import IUserData from '../types/IUserData';
 import Table from "./Table";
 
+/*
+ * A component that displays the user's data in a table
+ */
 const UserList: FC = () => {
     const [users, setUsers] = useState<Array<IUserData>>([]);
     const [filter, setFilter] = useState<string>("");

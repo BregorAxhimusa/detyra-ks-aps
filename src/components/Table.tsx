@@ -14,28 +14,29 @@ interface ITableProps {
     data: any;
 }
 
+/*
+ * Handle how the data is presented, and the table controls
+ * such as how much data is displayed, and the search field
+ */
 function CustomTable({ columns, data }: ITableProps) {
   const navigate = useNavigate();
   return (
     <DatatableWrapper body={data} headers={columns} 
 
-    paginationOptionsProps={{
-      initialState: {
-        rowsPerPage: 15,
-        options: [15, 30, 40, 50]
-      }
-    }}>
+      paginationOptionsProps={{
+        initialState: {
+          rowsPerPage: 15,
+          options: [15, 30, 40, 50]
+        }
+      }}>
 
       <Row className="mb-4 justify-content-end">
-
         <Col xs={12} sm={6} lg={2} className="mt-1">
           <PaginationOptions />
         </Col>
-
         <Col xs={12} sm={6} lg={2} className="mt-1">
           <Filter />
         </Col>
-
       </Row>
 
       <Table>
@@ -45,12 +46,10 @@ function CustomTable({ columns, data }: ITableProps) {
           }} />
       </Table>
 
+      <Col className="d-flex justify-content-end">
+        <Pagination />
+      </Col>
 
-        <Col className="d-flex justify-content-end">
-          <Pagination />
-        </Col>
-
-   
     </DatatableWrapper>
   );
 };

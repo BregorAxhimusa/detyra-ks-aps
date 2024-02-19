@@ -4,7 +4,10 @@ interface PropTypes {
   handlePress: (pageNumber: number) => void;
   currentPage: number;
 }
-
+/*
+ * Function to handle the pagination logic 
+ * for the table
+ */
 const Pagination = ({ postsPerPage, length, handlePress, currentPage }: PropTypes) => {
   // console.log( {postsPerPage, length, handlePress, currentPage});
   const paginationNumbers = [];
