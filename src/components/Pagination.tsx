@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface PropTypes {
   postsPerPage: number;
   length: number;
@@ -8,11 +6,11 @@ interface PropTypes {
 }
 
 const Pagination = ({ postsPerPage, length, handlePress, currentPage }: PropTypes) => {
-  console.log( {postsPerPage, length, handlePress, currentPage});
+  // console.log( {postsPerPage, length, handlePress, currentPage});
   const paginationNumbers = [];
 
   for (let i = 1; i <= Math.ceil(length / postsPerPage); i++) {
-    console.log({i});
+    // console.log({i});
     paginationNumbers.push(i);
   }
 

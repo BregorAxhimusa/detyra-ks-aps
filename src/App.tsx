@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -15,13 +15,6 @@ const App: React.FC = () => {
         <a href="/" className="navbar-brand">
           Frontend Developer
         </a>
-        {/* <div className="navbar-nav mr-auto">
-          <li className="nav-item">
-            <Link to={"/users"} className="nav-link">
-              List of Users
-            </Link>
-          </li>
-        </div> */}
       </nav>
 
       <div className="container mt-5">

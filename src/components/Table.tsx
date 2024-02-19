@@ -1,4 +1,3 @@
-import React from "react";
 import {
   DatatableWrapper,
   Filter,
@@ -19,16 +18,11 @@ function CustomTable({ columns, data }: ITableProps) {
   const navigate = useNavigate();
   return (
     <DatatableWrapper body={data} headers={columns} 
-    // sortProps={{
-    //   sortValueObj: {
-    //     date: (date) =>
-    //       parse(`${date}`, 'MMMM dd, yyyy', new Date()).getTime()
-    //   }
-    // }}
+
     paginationOptionsProps={{
       initialState: {
         rowsPerPage: 15,
-        options: [30, 40, 50]
+        options: [15, 30, 40, 50]
       }
     }}>
 

@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import React, { useState, useEffect, ChangeEvent, FC, useMemo } from "react";
+import { useState, useEffect, FC } from "react";
 
 import IUserData from "../types/IUserData";
 import IUserPostData from "../types/IUserPostData";
