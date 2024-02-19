@@ -1,0 +1,176 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.tableRow {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  font-family: Roboto-Bold  ;
+  color: #333;
+  line-height: 1.4;
+}
+
+:root {
+  --main-color: #282c34;
+  --border-color: #f2f2f2;
+}
+
+table {
+  background-color: transparent;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead tr,
+table tbody tr {
+  border: 1px solid #f2f2f2;
+}
+
+table thead tr th {
+  border: 1px solid #f2f2f2;
+  font-size: 18px;
+}
+
+table tbody tr td {
+  border: 1px solid #f2f2f2;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+table tbody tr td:hover {
+  background-color: #f2f2f2;
+}
+
+.btn{
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+  border: none;
+}
+
+.btn:hover{
+  background-color: black;
+}
+
+.btn:disabled{
+  background-color: green;
+}
+
+@media screen and (max-width: 800px) {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    border-bottom: 3px solid #000;
+    display: block;
+    margin-bottom: .625em;
+    background-color: red;
+  }
+
+  table td {
+    border-bottom: 1px solid #000;
+    display: block;
+    font-size: .8em;
+    text-align: left;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.paginationOpts__root label{
+  display: none;
+}
+
+.form-select:focus,
+.form-control:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.25);
+}
+
+.tag_profile, .paragraph_tag {
+  font-size: 12px;
+  border: 1px solid #f2f2f2;
+  padding: 1.1rem 1.5rem 0rem 1.5rem;
+  text-align: center;
+}
+
+.tag_profile div{
+  width: 10vw;
+}
+
+.href_button a {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.href_button a:hover {
+  color: #282c34; 
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.tag_profile {
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.div_content, .paragraph_tag {
+  border: 1px solid var(--border-color);
+  padding: 5px;
+}
